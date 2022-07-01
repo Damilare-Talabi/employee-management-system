@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\pages",
+    "\\src\\app\\pages\\frontoffice",
+    "\\src\\app\\pages\\frontoffice\\enrollment",
+    "\\src\\app\\pages\\frontoffice\\enrollment\\breederdoc",
+    "\\src\\environments"
+  ],
+  "SelectedNode": "\\src\\app\\pages\\frontoffice\\enrollment\\register",
+  "PreviewInSolutionExplorer": false
+}
