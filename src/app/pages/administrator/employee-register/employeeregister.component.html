@@ -1,0 +1,245 @@
+<!-- start page title -->
+<app-pagetitle title="Register Employee" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+<!-- end page title -->
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="d-sm-flex align-items-center justify-content-between">
+                        <div class="col-10">
+                            <h4 class="card-title">Employee Registration Information</h4>
+                            <p class="card-title-desc">Please ensure you double check each information with the new employee.</p>
+                        </div>
+                        <div class="col-2 text-end">
+                            <a  type="button" class="btn btn-outline-primary btn-rounded px-3 w-lg">Save</a> 
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card mb-0">
+                            <div class="p-4">
+                                <h4 class="card-title mt-0 mb-4">Personal Information</h4>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4">
+                                            <label for="LastName" class="col-sm-4 col-4 col-form-label text-end">Last Name</label>
+                                            <div class="col-sm-8 col-8">
+                                                <input type="text" class="form-control form-control-md" id="LastName">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4">
+                                            <label for="FirstName" class="col-sm-4 col-4 col-form-label text-end">First Name</label>
+                                            <div class="col-sm-8 col-8">
+                                                <input type="text" class="form-control form-control-md" id="FirstName">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4">
+                                            <label for="MiddleName" class="col-sm-4 col-4 col-form-label text-end">Middle Name</label>
+                                            <div class="col-sm-8 col-8">
+                                                <input type="text" class="form-control form-control-md" id="MiddleName">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4">
+                                            <label for="DateOfBirth" class="col-sm-4 col-4 col-form-label text-end">Date of Birth</label>
+                                            <div class="col-sm-8 col-8">
+                                                <input  class="form-control form-control-md  flatpickr-input " type="text" mwlFlatpickr>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4">
+                                            <label for="Nationality" class="col-sm-4 col-4 col-form-label text-end">Nationality</label>
+                                            <div class="col-sm-8 col-8">
+                                                <input type="text" class="form-control form-control-md" id="Nationality">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4">
+                                            <label for="PlaceOfBirth" class="col-sm-4 col-4 col-form-label text-end">Permanent Address</label>
+                                            <div class="col-sm-8 col-8">
+                                                <textarea class="form-control form-control-md" id="PermanentAddress" type="text" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4 ">
+                                            <label for="EmailAddress" class="col-sm-4 col-4 col-form-label text-end">Email Address</label>
+                                            <div class="col-sm-8 col-8">
+                                                <input type="text" class="form-control form-control-md" id="EmailAddress">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4">
+                                            <label for="MobileNumber1" class="col-sm-4 col-4 col-form-label text-end">Mobile No. 1</label>
+                                            <div class="col-sm-8 col-8">
+                                                <input type="tel" class="form-control form-control-md" value="+234-(555)-555-5555"
+                                                placeholder="Enter Mobile No. 1" id="MobileNumber1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4">
+                                            <label for="MobileNumber2" class="col-sm-4 col-4 col-form-label text-end">Mobile No. 2</label>
+                                            <div class="col-sm-8 col-8">
+                                                <input type="tel" class="form-control form-control-md" value="+234-(555)-555-5555"
+                                                placeholder="Enter Mobile No. 2" id="MobileNumber2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4 ">
+                                            <label for="BankName" class="col-sm-4 col-4 col-form-label text-end">Bank Name</label>
+                                            <div class="col-sm-8 col-8">
+                                                <input type="text" class="form-control form-control-md" id="BankName">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4">
+                                            <label for="AccountName" class="col-sm-4 col-4 col-form-label text-end">Account Name</label>
+                                            <div class="col-sm-8 col-8">
+                                                <input type="text" class="form-control form-control-md" id="AccountName">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4">
+                                            <label for="AccountNo" class="col-sm-4 col-4 col-form-label text-end">Account No.</label>
+                                            <div class="col-sm-8 col-8">
+                                                <input type="number" class="form-control form-control-md" value="111-111-1111"
+                                                placeholder="Enter Account Number" id="AccountNo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4">
+                                            <label for="LastName" class="col-sm-4 col-4 col-form-label text-end">Guarantor's Name</label>
+                                            <div class="col-sm-8 col-8">
+                                                <input type="text" class="form-control form-control-md" id="LastName">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4">
+                                            <label for="FirstName" class="col-sm-4 col-4 col-form-label text-end">Guarantor's Contact</label>
+                                            <div class="col-sm-8 col-8">
+                                                <input type="te1" class="form-control form-control-md" id="MobileNumber" value="+234-(555)-555-5555"
+                                                 placeholder="Enter Mobile No">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4">
+                                            <label for="MiddleName" class="col-sm-4 col-4 col-form-label text-end">Guarantor's Address</label>
+                                            <div class="col-sm-8 col-8">
+                                                <textarea class="form-control form-control-md" id="PermanentAddress" type="text" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4">
+                                            <label for="username" class="col-sm-4 col-4 col-form-label text-end">Username</label>
+                                            <div class="col-sm-8 col-8">
+                                                <input  class="form-control form-control-md" type="text" id="username">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row mb-4">
+                                            <label for="Nationality" class="col-sm-4 col-4 col-form-label text-end">Password</label>
+                                            <div class="col-sm-8 col-8">
+                                                <input type="text" class="form-control form-control-md" id="Nationality">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row">
+                                            <label for="Nationality" class="col-sm-4 col-6 col-form-label text-end">Gender</label>
+                                            <div class="col-sm-8 col-6">
+                                                <div class="row pt-2">
+                                                    <div class="col-6">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="Gender" id="Gender" value="Gender" checked>
+                                                            <label class="form-check-label" for="gridRadios1">Female</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="Gender" id="Gender" value="Gender" checked>
+                                                            <label class="form-check-label" for="gridRadios1">Male</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="row mb-2">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row">
+                                            <label for="Occupation" class="col-sm-4 col-6 col-form-label text-end">Marital Status</label>
+                                            <div class="col-sm-8 col-6">
+                                                <div class="row pt-2">
+                                                    <div class="col-6">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="marital" id="marital" value="marital" checked>
+                                                            <label class="form-check-label" for="gridRadios1">Single</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="marital" id="marital" value="marital" checked>
+                                                            <label class="form-check-label" for="gridRadios1">Married</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end col -->
+
+</div>
+<!-- end row -->

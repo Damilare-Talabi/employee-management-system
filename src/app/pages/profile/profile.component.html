@@ -1,0 +1,448 @@
+<!-- start page title -->
+<app-pagetitle title="Applicant Information" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+<!-- end page title -->
+
+<div class="row">
+    <div class="col-lg-10">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <div class="">
+                                    <div class="clearfix"></div>
+                                    <div class="text-center">
+                                        <img src="assets/images/profile.jpg" alt=""
+                                            class="avatar-xl img-thumbnail mb-3">
+                                        <h4 class="text-primary mb-2">Olasunkanmi Fadayomi</h4>
+                                        <h5 class="text-muted font-size-13 mb-3">1236547890 | 0987654321</h5>
+                                    </div>
+                                    <hr class="my-4">
+                                    <h5 class="font-size-16">Signature</h5>
+                                    <div class="card center">
+                                        <div class="card-body cards text-center">
+                                            <img src="assets/images/signature.jpg" alt="" class="signature" style="cursor: pointer;"> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-4">
+                                <div class="">
+                                    <h5 class="font-size-16">Special Features</h5>
+                                    <div class="mt-3">
+                                        <span class="badge badge-soft-dark font-size-12 me-2"><strong>Height:</strong> 2.5m</span>
+                                        <span class="badge badge-soft-dark font-size-12 me-2"><strong>Hair Color:</strong> Blue</span>
+                                        <span class="badge badge-soft-dark font-size-12 me-2"><strong>Eye Color:</strong> Brown</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-8">
+                        <div class="card mb-0">
+                            <ul ngbNav #nav="ngbNav" [activeId]="1" class="nav nav-tabs nav-tabs-custom nav-justified">
+                                <li [ngbNavItem]="1">
+                                    <a ngbNavLink>
+                                        <i class="mdi mdi-clipboard-text-outline font-size-20"></i>
+                                        <span class="d-none d-sm-block">Demographic Information</span>
+                                    </a>
+                                    <ng-template ngbNavContent>
+                                        <div>
+                                            <div class="row">
+                                                <h5 class="font-size-16 mb-3">Personal Information</h5>
+                                                <div class="col-4">
+                                                    <div>
+                                                        <p class="mb-1 text-muted">Lastname :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">Fadayomi</h5>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <p class="mb-1 text-muted">Gender :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">Male</h5>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <p class="mb-1 text-muted">Date of Birth :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">26 Feb, 2021</h5>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <p class="mb-1 text-muted">NIN :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">143567897554</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div>
+                                                        <p class="mb-1 text-muted">Firstname :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">Olasunkanmi</h5>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <p class="mb-1 text-muted">State of Birth :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">Lagos</h5>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <p class="mb-1 text-muted">Marital Status :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">Single</h5>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <p class="mb-1 text-muted">Permanent Address :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">14, Ebute-metta street, Oyingbo</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div>
+                                                        <p class="mb-1 text-muted">Middlename :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">Sunday</h5>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <p class="mb-1 text-muted">Nationality :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">Nigerian</h5>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <p class="mb-1 text-muted">Occupation :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">Lawyer</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr class="my-4">
+
+                                            <div class="row mt-1">
+                                                <h5 class="font-size-16 mb-3">Passport Details</h5>
+                                                <div class="col-4">
+                                                    <div>
+                                                        <p class="mb-1 text-muted">Document Type :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">E-passport</h5>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <p class="mb-1 text-muted">Passport Type :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">Fresh Application</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div>
+                                                        <p class="mb-1 text-muted">File Number :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">102264</h5>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <p class="mb-1 text-muted">Application Purpose :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">Fresh Application</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div>
+                                                        <p class="mb-1 text-muted">Document Pages :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">64 Pages</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr class="my-4">
+
+                                            <div class="row mt-1">
+                                                <h5 class="font-size-16 mb-3">Payment Details</h5>
+                                                <div class="col-4">
+                                                    <div>
+                                                        <p class="mb-1 text-muted">Reference ID :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">1836573946578</h5>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <p class="mb-1 text-muted">Application ID :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">273467</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div>
+                                                        <p class="mb-1 text-muted">Amount (Naira) :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">#30,000</h5>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <p class="mb-1 text-muted">Application Date :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">26 Feb, 2021</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div>
+                                                        <p class="mb-1 text-muted">Receipt Number :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">123456</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr class="my-4">
+
+                                            <div class="row mt-1">
+                                                <h5 class="font-size-16 mb-3">Other Information</h5>
+                                                <div class="col-4">
+                                                    <div>
+                                                        <p class="mb-1 text-muted">Colour of Eyes :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">blue</h5>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <p class="mb-1 text-muted">Next of kin Name :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">Tunde Marcus</h5>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <p class="mb-1 text-muted">Gaurantor Address :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">14, Ebute-metta street, Oyingbo</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div>
+                                                        <p class="mb-1 text-muted">Colour of Hair :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">Blue</h5>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <p class="mb-1 text-muted">Next of kin Address :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">14, Ebute-metta street, Oyingbo</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div>
+                                                        <p class="mb-1 text-muted">Height (metres) :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">123metres</h5>
+                                                    </div>
+                                                    <div class="mt-3">
+                                                        <p class="mb-1 text-muted">Gaurantor Name :</p>
+                                                        <h5 class="font-size-14 fw-bold text-dark">123metres</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                </li>
+
+                                <li [ngbNavItem]="2">
+                                    <a ngbNavLink>
+                                        <i class="mdi mdi-hand-left font-size-20"></i>
+                                        <i class="mdi mdi-hand-right font-size-20"></i>
+                                        <span class="d-none d-sm-block">Fingerprint Capture</span>
+                                    </a>
+                                    <ng-template ngbNavContent>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-check mt-2">
+                                                    <input class="form-check-input font-size-18" type="checkbox" id="formCheck2" checked>
+                                                    <label class="form-check-label font-size-18" for="formCheck2">Applicant has no fingerprint</label>
+                                                </div> 
+                                                <hr class="my-4">
+                                            </div>
+                                        </div>
+                                        <h5 class="font-size-16 mb-3"><i class="mdi mdi-hand-left font-size-20"></i>Left Hand</h5>
+                                        <div class="row mb-3">
+                                            <div class="col-lg-12 col-sm-12 mb-3">
+                                                <span class="me-3"><img src="assets/images/no-image2.jpg" alt="" class="capture img-thumbnail mb-3" style="cursor: pointer;"></span>
+                                                <span class="me-3"><img src="assets/images/no-image2.jpg" alt="" class="capture img-thumbnail mb-3" style="cursor: pointer;"></span>
+                                                <span class="me-3"><img src="assets/images/no-image2.jpg" alt="" class="capture img-thumbnail mb-3" style="cursor: pointer;"></span>
+                                                <span class="me-3"><img src="assets/images/no-image2.jpg" alt="" class="capture img-thumbnail mb-3" style="cursor: pointer;"></span>
+                                                <span class="me-3"><img src="assets/images/no-image2.jpg" alt="" class="capture img-thumbnail mb-3" style="cursor: pointer;"></span>
+                                            </div> 
+                                        </div>
+                                        <hr class="my-4">
+                                        <h5 class="font-size-16 my-4"><i class="mdi mdi-hand-right font-size-20"></i>Right Hand</h5>
+                                        <div class="row mb-3">
+                                            <div class="col-lg-12 col-sm-12 mb-3">                                        
+                                                <span class="me-3"><img src="assets/images/no-image2.jpg" alt="" class="capture img-thumbnail mb-3" style="cursor: pointer;"></span>
+                                                <span class="me-3"><img src="assets/images/no-image2.jpg" alt="" class="capture img-thumbnail mb-3" style="cursor: pointer;"></span>
+                                                <span class="me-3"><img src="assets/images/no-image2.jpg" alt="" class="capture img-thumbnail mb-3" style="cursor: pointer;"></span>
+                                                <span class="me-3"><img src="assets/images/no-image2.jpg" alt="" class="capture img-thumbnail mb-3" style="cursor: pointer;"></span>
+                                                <span class="me-3"><img src="assets/images/no-image2.jpg" alt="" class="capture img-thumbnail mb-3" style="cursor: pointer;"></span>
+                                            </div> 
+                                        </div>
+                                    </ng-template>
+                                </li>
+
+                                <li [ngbNavItem]="3">
+                                    <a ngbNavLink>
+                                        <i class="mdi mdi-email-outline font-size-20"></i>
+                                        <span class="d-none d-sm-block">Passport History</span>
+                                    </a>
+                                    <ng-template ngbNavContent>
+                                        <div>
+                                            <div>
+                                                
+                                            </div>
+                                            <div>
+                                                <h5 class="font-size-16 mb-4">Previous Applications</h5>
+                                                <div class="table-responsive">
+                                                    <table class="table table-nowrap table-hover mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">#</th>
+                                                                <th scope="col">Passport Number</th>
+                                                                <th scope="col">Enrollment Date</th>
+                                                                <th scope="col">Status</th>
+                                                                <th scope="col" style="width: 120px;">Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">01</th>
+                                                                <td><a href="javascript: void(0);" class="text-dark">Brand Logo
+                                                                        Design</a></td>
+                                                                <td>
+                                                                    18 Jan, 2021
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-soft-primary font-size-12">Open</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="dropdown" ngbDropdown>
+                                                                        <a class="text-muted dropdown-toggle font-size-18 px-2"
+                                                                            href="javascript:void(0);" role="button"
+                                                                            data-bs-toggle="dropdown" ngbDropdownToggle
+                                                                            aria-haspopup="true">
+                                                                            <i class="mdi mdi-dots-vertical"></i>
+                                                                        </a>
+                                                                        <div class="dropdown-menu dropdown-menu-end" ngbDropdownMenu>
+                                                                            <a class="dropdown-item"
+                                                                                href="javascript: void(0);">View Application</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">02</th>
+                                                                <td><a href="javascript: void(0);" class="text-dark">Samply Admin</a>
+                                                                </td>
+                                                                <td>
+                                                                    06 Jan, 2021
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-soft-primary font-size-12">Open</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="dropdown" ngbDropdown>
+                                                                        <a class="text-muted dropdown-toggle font-size-18 px-2"
+                                                                            href="javascript:void(0);" role="button"
+                                                                            data-bs-toggle="dropdown" ngbDropdownToggle
+                                                                            aria-haspopup="true">
+                                                                            <i class="mdi mdi-dots-vertical"></i>
+                                                                        </a>
+                                                                        <div class="dropdown-menu dropdown-menu-end" ngbDropdownMenu>
+                                                                            <a class="dropdown-item"
+                                                                                href="javascript: void(0);">View Application</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">03</th>
+                                                                <td><a href="javascript: void(0);" class="text-dark">Chat app Design</a>
+                                                                </td>
+                                                                <td>
+                                                                    28 Feb, 2021
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-soft-success font-size-12">Complete</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="dropdown" ngbDropdown>
+                                                                        <a class="text-muted dropdown-toggle font-size-18 px-2"
+                                                                            href="javascript:void(0);" role="button"
+                                                                            data-bs-toggle="dropdown" ngbDropdownToggle
+                                                                            aria-haspopup="true">
+                                                                            <i class="mdi mdi-dots-vertical"></i>
+                                                                        </a>
+
+                                                                        <div class="dropdown-menu dropdown-menu-end" ngbDropdownMenu>
+                                                                            <a class="dropdown-item"
+                                                                                href="javascript: void(0);">View Application</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">04</th>
+                                                                <td><a href="javascript: void(0);" class="text-dark">Samply Landing</a>
+                                                                </td>
+                                                                <td>
+                                                                    13 Feb, 2021
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-soft-success font-size-12">Complete</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="dropdown" ngbDropdown>
+                                                                        <a class="text-muted dropdown-toggle font-size-18 px-2"
+                                                                            href="javascript:void(0);" role="button"
+                                                                            data-bs-toggle="dropdown" ngbDropdownToggle
+                                                                            aria-haspopup="true">
+                                                                            <i class="mdi mdi-dots-vertical"></i>
+                                                                        </a>
+                                                                        <div class="dropdown-menu dropdown-menu-end" ngbDropdownMenu>
+                                                                            <a class="dropdown-item"
+                                                                                href="javascript: void(0);">View Application</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">05</th>
+                                                                <td><a href="javascript: void(0);" class="text-dark">Authentication
+                                                                        Pages</a></td>
+                                                                <td>
+                                                                    06 Feb, 2021
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-soft-success font-size-12">Complete</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="dropdown" ngbDropdown>
+                                                                        <a class="text-muted dropdown-toggle font-size-18 px-2"
+                                                                            href="javascript:void(0);" role="button"
+                                                                            data-bs-toggle="dropdown" ngbDropdownToggle
+                                                                            aria-haspopup="true">
+                                                                            <i class="mdi mdi-dots-vertical"></i>
+                                                                        </a>
+                                                                        <div class="dropdown-menu dropdown-menu-end" ngbDropdownMenu>
+                                                                            <a class="dropdown-item"
+                                                                                href="javascript: void(0);">View Application</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                </li>
+                            </ul>
+                            <div [ngbNavOutlet]="nav" class="p-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="d-sm-flex align-items-center justify-content-between">
+                        <div class="col-12">
+                            <h4 class="card-title">Tips</h4>
+                            <p class="card-title-desc">The applicant registration tips below provides officers step by step guide on the applicant registration process</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-0">
+                    <div class="col-lg-12">
+                        <div class="mt-0">
+                            <h5 class="font-size-14">Biometric video guide</h5>
+                            <p class="card-title-desc">Click the video below to watch registration guide.</p>
+                            <div class="">
+                                <div class="ratio ratio-1x1">
+                                    <iframe src="https://www.youtube.com/embed/1y_kfWUCFDQ"
+                                        title="YouTube video" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div>
+<!-- end row -->

@@ -1,0 +1,13 @@
+<!-- start page title -->
+<app-pagetitle title="Starter Page" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+<!-- end page title -->
+<div class="right-bar" (clickOutside)="hide()" [exclude]="'.right-bar-toggle'">
+    <ngx-simplebar class="h-100">
+        <div class="rightbar-title d-flex align-items-center bg-dark p-3">
+            <h5 class="m-0 me-2 text-white">Theme Customizer</h5>
+            <a href="javascript:void(0);" class="right-bar-toggle ms-auto" (click)="hide();">
+                <i class="mdi mdi-close noti-icon"></i>
+            </a>
+        </div>
+    </ngx-simplebar> 
+</div>            
